@@ -1,49 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet" />
-    <link rel="stylesheet" href="./css/style.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Tailwind-website</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Tailwind-website</title>
 </head>
-<body>
-  <header class="fixed container flex">
-    <nav class="flex justify-between">
-      <a>BrandName</a>
-      <div>
+
+<body class="box-border">
+  <header class="fixed flex w-full text-white bg-[#252B42] lg:bg-[rgba(0,0,0,.1)] z-50">
+    <nav class="container lg:container flex flex-col lg:flex-row justify-between mx-auto p-5">
+      <div class="flex flex-row justify-between items-center">
+        <a class="text-3xl leading-none">BrandName</a>
+        <div class="flex lg:hidden gap-8">
+          <img class="w-6 cursor-pointer" src="./assets/svg/search.svg" alt="search">
+          <img class="w-6 cursor-pointer" src="./assets/svg/shopping.svg" alt="shopping">
+          <div class="w-6 cursor-pointer items-center flex"><input type="checkbox" id="menu-toggle"
+              class="hidden"><label for="menu-toggle"
+              class="flex items-center w-6 h-4 bg-[url('../assets/svg/menu.svg')] bg-cover bg-center cursor-pointer"></label>
+          </div>
+        </div>
+      </div>
+      <div
+        class="show transition-all ease-in-out delay-100 lg:h-auto hidden lg:flex flex-col lg:flex-row gap-x-8 gap-y-8 lg:gap-y-0 items-center py-24 lg:py-0 text-3xl lg:text-sm">
         <a>Home</a>
         <a>Product</a>
         <a>Pricing</a>
         <a>Contact</a>
       </div>
-      <div>
+      <div class="hidden lg:flex items-center gap-x-3">
         <a>Login</a>
-        <button>Become a member →</button>
+        <button
+          class="bg-sky-500 text-white py-3.5 px-6 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">Become
+          a member →</button>
       </div>
     </nav>
   </header>
   <main>
-    <section class="bg-[url('../assets/jpg/hero.jpg')] bg-cover h-lvh flex items-center justify-center">
-      <div class="container flex flex-col">
-        <h1>We Ensure A Best Insurance Service</h1>
-        <h3>We know how large objects
-          will act, but things on a small scale.</h3>
-        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-          <button type="button" class="hero-btn">Get Quote Now</button>
-          <button type="button" class="hero-btn-outline">Learn More</button>
+    <section
+      class="bg-[url('../assets/jpg/hero.jpg')] bg-cover bg-[75%_20%] lg:bg-center flex items-center justify-center text-white">
+      <div class="bg-gradient-to-r from-black to-transparent w-full h-full flex justify-center pt-16">
+        <div class="sm:container lg:container flex items-center py-24 lg:py-40">
+          <div class="flex flex-col items-center lg:items-start lg:justify-start max-w-3xl">
+            <h1 class="text-4xl lg:text-7xl mb-5 mx-auto text-center lg:text-start">We Ensure A Best Insurance Service
+            </h1>
+            <h3 class="text-xl max-w-sm mb-5 text-center lg:text-start">We know how large objects
+              will act, but things on a small scale.</h3>
+            <div class="flex flex-col lg:flex-row gap-y-3 lg:gap-x-5">
+              <button type="button" class="bg-sky-500 text-white py-2 px-6 rounded-full">Get Quote Now</button>
+              <button type="button" class="text-white py-2 px-6 rounded-full border-2 border-white">Learn More</button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    <section></section>
-    <section></section>
-    <section></section>
-    
+    <section class="bg-[#252B42] text-white flex justify-center">
+      <div class="lg:container flex gap-y-8 lg:gap-y-0 lg:gap-x-8 flex-col lg:flex-row py-24 lg:py-0">
+        <div class="lg:w-1/3 flex flex-col items-center lg:my-32 p-10">
+          <img class="w-16 mb-5" src="./assets/svg/wallet.svg">
+          <p class="max-w-64 text-center">So it really behaves like neither.
+            Now we have given up. </p>
+        </div>
+        <div class="lg:w-1/3 flex flex-col items-center lg:my-32 p-10">
+          <img class="w-16 mb-5" src="./assets/svg/save.svg">
+          <p class="max-w-64 text-center">They were used to create the
+            machines that launched </p>
+        </div>
+        <div class="lg:w-1/3 flex flex-col items-center lg:my-32 p-10">
+          <img class="w-16 mb-5" src="./assets/svg/people.svg">
+          <p class="max-w-64 text-center">So it really behaves like neither.
+            Now we have given up. </p>
+        </div>
+      </div>
+    </section>
+    <section class="bg-[#8EC2F2] flex flex-col items-center">
+      <div class="lg:container py-28">
+        <div class="flex flex-col items-center text-white w-full lg:w-1/3 mx-auto">
+          <h2 class="text-4xl">Industry</h2>
+          <p class="text-center">Problems trying to resolve the conflict between
+            the two major realms of Classical physics: Newtonian mechanics </p>
+        </div>
+        <div class="flex gap-x-8 flex-col lg:flex-row">
+          <div class="flex flex-col bg-white my-10 ms-6 lg:ms-24 me-6 px-10 py-7 relative">
+            <img class="absolute left-[-8%] hidden lg:block" src="./assets/png/user-1.png">
+            <h3 class="text-3xl font-bold">Regina Miles</h3>
+            <span class="mb-3">Designer</span>
+            <div class="flex mb-2">
+              <img src="./assets/svg/star.svg" alt="">
+              <img src="./assets/svg/star.svg" alt="">
+              <img src="./assets/svg/star.svg" alt="">
+              <img src="./assets/svg/star.svg" alt="">
+              <img src="./assets/svg/star-outline.svg" alt="">
+            </div>
+            <p class="text-[#737373]">This proved to be impossible using the traditional
+              concepts of space and time. Einstein developed a
+              new view of time first and then space. This proved
+              to be impossible using the traditional concepts of
+              space and time. Einstein developed a new view
+              of time first and then space.</p>
+          </div>
+          <div class="flex flex-col bg-white my-10 ms-6 lg:ms-24 me-6 px-10 py-7 relative">
+            <img class="absolute left-[-8%] hidden lg:block" src="./assets/png/user-2.png">
+            <h3 class="text-3xl font-bold">Regina Miles</h3>
+            <span class="mb-3">Designer</span>
+            <div class="flex mb-2">
+              <img src="./assets/svg/star.svg" alt="">
+              <img src="./assets/svg/star.svg" alt="">
+              <img src="./assets/svg/star.svg" alt="">
+              <img src="./assets/svg/star.svg" alt="">
+              <img src="./assets/svg/star-outline.svg" alt="">
+            </div>
+            <p class="text-[#737373]">This proved to be impossible using the traditional
+              concepts of space and time. Einstein developed a
+              new view of time first and then space. This proved
+              to be impossible using the traditional concepts of
+              space and time. Einstein developed a new view
+              of time first and then space.</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <section class="bg-[#252B42] flex flex-col items-center">
+      <div class="xl:container py-28">
+        <div class="flex flex-col items-center text-white w-full lg:w-1/3 mx-auto">
+          <h2 class="text-4xl">Industry</h2>
+          <p class="text-center">Problems trying to resolve the conflict between
+            the two major realms of Classical physics: Newtonian mechanics </p>
+        </div>
+        <div class="flex flex-row flex-wrap justify-center mx-auto items-center text-white gap-x-5 my-10">
+          <div class="w-[331px] h-[451px] justify-end bg-[url('../assets/jpg/post-1.jpg')] bg-cover flex flex-col mb-10">
+            <div class="bg-custom-gradient px-10 py-7">
+              <span class="mb-3">Tax Management</span>
+              <h3 class="text-2xl font-bold">Life Tips From Top Ten Adventure Travelers</h3>
+              <button class="bg-sky-500 text-white py-2 px-6 rounded-full">View Project</button>
+            </div>
+          </div>
+          <div class="w-[331px] h-[451px] justify-end bg-[url('../assets/jpg/post-2.jpg')] bg-cover flex flex-col mb-10">
+            <div class="bg-custom-gradient px-10 py-7">
+              <span class="mb-3">Tax Management</span>
+              <h3 class="text-2xl font-bold">Life Tips From Top Ten Adventure Travelers</h3>
+              <button class="bg-sky-500 text-white py-2 px-6 rounded-full">View Project</button>
+            </div>
+          </div>
+          <div class="w-[331px] h-[451px] justify-end bg-[url('../assets/jpg/post-3.jpg')] bg-cover flex flex-col mb-10">
+            <div class="bg-custom-gradient px-10 py-7">
+              <span class="mb-3">Tax Management</span>
+              <h3 class="text-2xl font-bold">Life Tips From Top Ten Adventure Travelers</h3>
+              <button class="bg-sky-500 text-white py-2 px-6 rounded-full">View Project</button>
+            </div>
+          </div>
+          <div class="w-[331px] h-[451px] justify-end bg-[url('../assets/jpg/post-4.jpg')] bg-cover flex flex-col mb-10">
+            <div class="bg-custom-gradient px-10 py-7">
+              <span class="mb-3">Tax Management</span>
+              <h3 class="text-2xl font-bold">Life Tips From Top Ten Adventure Travelers</h3>
+              <button class="bg-sky-500 text-white py-2 px-6 rounded-full">View Project</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
     <section class="bg-[#252B42] text-white pt-20">
       <div class="wrapper mx-auto max-w-screen-lg">
           <h3 class="text-center font-bold text-white text-4xl">Pricing</h3>
@@ -325,4 +445,5 @@
       </div>
   </footer>
 </body>
+
 </html>
