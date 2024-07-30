@@ -1,0 +1,5 @@
+body:has(#menu-toggle:checked) {
+    .show {
+        display:flex;
+    }
+  }
