@@ -2,12 +2,23 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/style.css">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <title>Tailwind-website</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+      .bg-position {
+        background-position-x: 52%;
+      }
+    }
+    </style>
+    <title>Tailwind-website</title>
 </head>
 
 <body class="box-border">
@@ -173,284 +184,271 @@
     </section>
     <section class="bg-[#252B42] text-white pt-20">
       <div class="wrapper mx-auto max-w-screen-lg">
-          <h3 class="text-center font-bold text-white text-4xl">Pricing</h3>
-          <h4 class="text-center text-white mx-auto pt-2 pb-20 text-sm">
-              Problems trying to resolve the conflict between<br />
-              the two major realms of Classical physics: Newtonian mechanics
-          </h4>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-black">
-            <div class="relative mb-36">
-              <div class="mt-10 bg-white shadow-lg rounded-lg overflow-hidden">
-                  <div class="text-center p-0">
-                      <h5 class="text-center font-bold text-2xl pt-12 mb-0">FREE</h5>
-                      <p class="text-[#737373] font-bold text-base text-var-second-font-color py-9 px-20 mb-0">
-                          Organize across all apps by hand
-                      </p>
-                          <div class="flex flex-col items-center justify-center mb-5">
-                              <div class="desktop-container flex">
-                                  <p class="card-price font-bold text-4xl text-[#23A6F0] mb-0">0</p>
-                                  <p class="desktop-dollar font-bold text-4xl text-[#23A6F0] mb-0">$</p>
-                              </div>
-                              <div class="mobile-container flex">
-                                  <p class="card-dollar hidden">$</p>
-                                  <p class="pt-3 text-[#8EC2F2] font-bold">Per Month</p>
-                              </div>
-                          </div>
-                          <a href="#" class="bg-[#23A6F0] rounded-md text-white border-none flex items-center text-sm font-bold text-center w-60 h-13 justify-center py-4 px-10 mx-auto mb-9">
-                              Try for free
-                          </a>
-                          <div class="lists">
-                              <ul class="list-none p-0 px-10 pb-9">
-                                  <li class="flex items-center text-left font-bold text-sm pb-4">
-                                      <img src="./assets/svg/check-green.svg" alt="green checkmark" class="pr-2">
-                                      Unlimited product updates
-                                  </li>
-                                  <li class="flex items-center text-left font-bold text-sm pb-4">
-                                      <img src="./assets/svg/check-green.svg" alt="green checkmark" class="pr-2">
-                                      Unlimited product updates
-                                  </li>
-                                  <li class="flex items-center text-left font-bold text-sm pb-4">
-                                      <img src="./assets/svg/check-green.svg" alt="green checkmark" class="pr-2">
-                                      Unlimited product updates
-                                  </li>
-                                  <li class="flex items-center text-left font-bold text-sm pb-4">
-                                      <img src="./assets/svg/check-gray.svg" alt="gray checkmark" class="pr-2">
-                                      1GB Cloud storage
-                                  </li>
-                                  <li class="flex items-center text-left font-bold text-sm pb-4">
-                                      <img src="./assets/svg/check-gray.svg" alt="gray checkmark" class="pr-2">
-                                      Email and community Support
-                                  </li>
-                              </ul>
-                          </div>
-                      </div>
+        <h3 class="text-center font-bold text-white text-4xl">Pricing</h3>
+        <h4 class="text-center text-white mx-auto pt-2 pb-20 text-sm">
+          Problems trying to resolve the conflict between<br />
+          the two major realms of Classical physics: Newtonian mechanics
+        </h4>
+        <div class="grid grid-cols-1 gap-8 text-black lg:grid-cols-3">
+          <div class="max-w-[320px] mx-auto relative lg:mb-36">
+            <div class="mt-10 bg-white shadow-lg rounded-lg overflow-hidden">
+              <div class="text-center p-0">
+                <h5 class="text-center font-bold text-2xl pt-12 mb-0">FREE</h5>
+                <p class="text-[#737373] font-bold text-base text-var-second-font-color py-9 px-20 mb-0">
+                  Organize across all apps by hand
+                </p>
+                <div class="flex items-center justify-center mb-5 flex-row lg:flex-col">
+                  <div class="flex">
+                    <p class="font-bold text-4xl text-[#23A6F0] mb-0">0</p>
+                    <p class="font-bold text-4xl text-[#23A6F0] mb-0 hidden lg:block">$</p>
                   </div>
-              </div>
-              <div class="relative mb-36">
-                <div class="absolute top-0 right-7 z-10">
-                    <img src="./assets/png/New.png" alt="new mark">
+                  <div class="flex flex-col items-start pl-3">
+                    <p class="font-bold text-[#23A6F0] lg:hidden block">$</p>
+                    <p class="text-[#8EC2F2] font-bold text-sm lg:p-3">Per Month</p>
+                  </div>
                 </div>
-                <div class="mt-10 bg-white shadow-lg rounded-lg overflow-hidden">
-                    <div class="text-center p-0">
-                        <h5 class="card-title text-center font-bold text-2xl pt-12 mb-0">Silver</h5>
-                        <p class="text-[#737373] font-bold text-base text-var-second-font-color py-9 px-20 mb-0">
-                            Organize across all apps by hand
-                        </p>
-                          <div class="flex flex-col items-center justify-center mb-5">
-                              <div class="desktop-container flex">
-                                  <p class="card-price font-bold text-4xl text-[#23A6F0] mb-0">9.99</p>
-                                  <p class="desktop-dollar font-bold text-4xl text-[#23A6F0] mb-0">$</p>
-                              </div>
-                              <div class="mobile-container flex">
-                                  <p class="card-dollar hidden">$</p>
-                                  <p class="pt-3 text-[#8EC2F2] font-bold">Per Month</p>
-                              </div>
-                          </div>
-                          <a href="#" class="bg-[#23A6F0] rounded-md text-white border-none flex items-center text-sm font-bold text-center w-60 h-13 justify-center py-4 px-10 mx-auto mb-9">
-                              Try for free
-                          </a>
-                          <div class="lists">
-                              <ul class="list-none p-0 px-10 pb-9">
-                                  <li class="flex items-center text-left font-bold text-sm pb-4">
-                                      <img src="./assets/svg/check-green.svg" alt="green checkmark" class="pr-2">
-                                      Unlimited product updates
-                                  </li>
-                                  <li class="flex items-center text-left font-bold text-sm pb-4">
-                                      <img src="./assets/svg/check-green.svg" alt="green checkmark" class="pr-2">
-                                      Unlimited product updates
-                                  </li>
-                                  <li class="flex items-center text-left font-bold text-sm pb-4">
-                                      <img src="./assets/svg/check-green.svg" alt="green checkmark" class="pr-2">
-                                      Unlimited product updates
-                                  </li>
-                                  <li class="flex items-center text-left font-bold text-sm pb-4">
-                                      <img src="./assets/svg/check-gray.svg" alt="gray checkmark" class="pr-2">
-                                      1GB Cloud storage
-                                  </li>
-                                  <li class="flex items-center text-left font-bold text-sm pb-4">
-                                      <img src="./assets/svg/check-gray.svg" alt="gray checkmark" class="pr-2">
-                                      Email and community Support
-                                  </li>
-                              </ul>
-                          </div>
-                      </div>
-                  </div>
+                <a href="#" class="bg-[#23A6F0] rounded-md text-white border-none flex items-center text-sm font-bold text-center w-60 h-13 justify-center py-4 px-10 mx-auto mb-9">
+                  Try for free
+                </a>
+                <div class="lists">
+                  <ul class="list-none p-0 px-10 pb-9">
+                    <li class="flex items-center text-left font-bold text-sm pb-4">
+                      <img src="./assets/svg/check-green.svg" alt="green checkmark" class="pr-2">
+                      Unlimited product updates
+                    </li>
+                    <li class="flex items-center text-left font-bold text-sm pb-4">
+                      <img src="./assets/svg/check-green.svg" alt="green checkmark" class="pr-2">
+                      Unlimited product updates
+                    </li>
+                    <li class="flex items-center text-left font-bold text-sm pb-4">
+                      <img src="./assets/svg/check-green.svg" alt="green checkmark" class="pr-2">
+                      Unlimited product updates
+                    </li>
+                    <li class="flex items-center text-left font-bold text-sm pb-4">
+                      <img src="./assets/svg/check-gray.svg" alt="gray checkmark" class="pr-2">
+                      1GB Cloud storage
+                    </li>
+                    <li class="flex items-center text-left font-bold text-sm pb-4">
+                      <img src="./assets/svg/check-gray.svg" alt="gray checkmark" class="pr-2">
+                      Email and community Support
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <div class="relative mb-36">
-                <div class="mt-10 bg-white shadow-lg rounded-lg overflow-hidden">
-                    <div class="text-center p-0">
-                        <h5 class="card-title text-center font-bold text-2xl pt-12 mb-0">GOLD</h5>
-                        <p class="text-[#737373] font-bold text-base text-var-second-font-color py-9 px-20 mb-0">
-                            Organize across all apps by hand
-                        </p>
-                          <div class="flex flex-col items-center justify-center mb-5">
-                              <div class="desktop-container flex">
-                                  <p class="card-price font-bold text-4xl text-[#23A6F0] mb-0">19.99</p>
-                                  <p class="desktop-dollar font-bold text-4xl text-[#23A6F0] mb-0">$</p>
-                              </div>
-                              <div class="mobile-container flex">
-                                  <p class="card-dollar hidden">$</p>
-                                  <p class="p-3 text-[#8EC2F2] font-bold text-sm">Per Month</p>
-                              </div>
-                          </div>
-                          <a href="#" class="bg-[#23A6F0] rounded-md text-white border-none flex items-center text-sm font-bold text-center w-60 h-13 justify-center py-4 px-10 mx-auto mb-9">
-                              Try for free
-                          </a>
-                          <div class="lists">
-                              <ul class="list-none p-0 px-10 pb-9">
-                                  <li class="flex items-center text-left font-bold text-sm pb-4">
-                                      <img src="./assets/svg/check-green.svg" alt="green checkmark" class="pr-2">
-                                      Unlimited product updates
-                                  </li>
-                                  <li class="flex items-center text-left font-bold text-sm pb-4">
-                                      <img src="./assets/svg/check-green.svg" alt="green checkmark" class="pr-2">
-                                      Unlimited product updates
-                                  </li>
-                                  <li class="flex items-center text-left font-bold text-sm pb-4">
-                                      <img src="./assets/svg/check-green.svg" alt="green checkmark" class="pr-2">
-                                      Unlimited product updates
-                                  </li>
-                                  <li class="flex items-center text-left font-bold text-sm pb-4">
-                                      <img src="./assets/svg/check-gray.svg" alt="gray checkmark" class="pr-2">
-                                      1GB Cloud storage
-                                  </li>
-                                  <li class="flex items-center text-left font-bold text-sm pb-4">
-                                      <img src="./assets/svg/check-gray.svg" alt="gray checkmark" class="pr-2">
-                                      Email and community Support
-                                  </li>
-                              </ul>
-                          </div>
-                      </div>
-                  </div>
-              </div>
+            </div>
           </div>
+          <div class="max-w-[320px] mx-auto relative lg:mb-36">
+            <div class="absolute top-0 right-7 z-10">
+              <img src="./assets/png/New.png" alt="new mark">
+            </div>
+            <div class="mt-10 bg-white shadow-lg rounded-lg overflow-hidden">
+              <div class="text-center p-0">
+                <h5 class="text-center font-bold text-2xl pt-12 mb-0">SILVER</h5>
+                <p class="text-[#737373] font-bold text-base text-var-second-font-color py-9 px-20 mb-0">
+                  Organize across all apps by hand
+                </p>
+                <div class="flex items-center justify-center mb-5 flex-row lg:flex-col">
+                  <div class="flex">
+                    <p class="font-bold text-4xl text-[#23A6F0] mb-0">9.99</p>
+                    <p class="font-bold text-4xl text-[#23A6F0] mb-0 hidden lg:block">$</p>
+                  </div>
+                  <div class="flex flex-col items-start pl-3">
+                    <p class="font-bold text-[#23A6F0] lg:hidden block">$</p>
+                    <p class="text-[#8EC2F2] font-bold text-sm lg:p-3">Per Month</p>
+                  </div>
+                </div>
+                <a href="#" class="bg-[#23A6F0] rounded-md text-white border-none flex items-center text-sm font-bold text-center w-60 h-13 justify-center py-4 px-10 mx-auto mb-9">
+                  Try for free
+                </a>
+                <div class="lists">
+                  <ul class="list-none p-0 px-10 pb-9">
+                    <li class="flex items-center text-left font-bold text-sm pb-4">
+                      <img src="./assets/svg/check-green.svg" alt="green checkmark" class="pr-2">
+                      Unlimited product updates
+                    </li>
+                    <li class="flex items-center text-left font-bold text-sm pb-4">
+                      <img src="./assets/svg/check-green.svg" alt="green checkmark" class="pr-2">
+                      Unlimited product updates
+                    </li>
+                    <li class="flex items-center text-left font-bold text-sm pb-4">
+                      <img src="./assets/svg/check-green.svg" alt="green checkmark" class="pr-2">
+                      Unlimited product updates
+                    </li>
+                    <li class="flex items-center text-left font-bold text-sm pb-4">
+                      <img src="./assets/svg/check-gray.svg" alt="gray checkmark" class="pr-2">
+                      1GB Cloud storage
+                    </li>
+                    <li class="flex items-center text-left font-bold text-sm pb-4">
+                      <img src="./assets/svg/check-gray.svg" alt="gray checkmark" class="pr-2">
+                      Email and community Support
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="max-w-[320px] mx-auto relative mb-36">
+            <div class="mt-10 bg-white shadow-lg rounded-lg overflow-hidden">
+              <div class="text-center p-0">
+                <h5 class="text-center font-bold text-2xl pt-12 mb-0">GOLD</h5>
+                <p class="text-[#737373] font-bold text-base text-var-second-font-color py-9 px-20 mb-0">
+                  Organize across all apps by hand
+                </p>
+                <div class="flex items-center justify-center mb-5 flex-row lg:flex-col">
+                  <div class="flex">
+                    <p class="font-bold text-4xl text-[#23A6F0] mb-0">19.99</p>
+                    <p class="font-bold text-4xl text-[#23A6F0] mb-0 hidden lg:block">$</p>
+                  </div>
+                  <div class="flex flex-col items-start pl-3">
+                    <p class="font-bold text-[#23A6F0] lg:hidden block">$</p>
+                    <p class="text-[#8EC2F2] font-bold text-sm lg:p-3">Per Month</p>
+                  </div>
+                </div>
+                <a href="#" class="bg-[#23A6F0] rounded-md text-white border-none flex items-center text-sm font-bold text-center w-60 h-13 justify-center py-4 px-10 mx-auto mb-9">
+                  Try for free
+                </a>
+                <div class="lists">
+                  <ul class="list-none p-0 px-10 pb-9">
+                    <li class="flex items-center text-left font-bold text-sm pb-4">
+                      <img src="./assets/svg/check-green.svg" alt="green checkmark" class="pr-2">
+                      Unlimited product updates
+                    </li>
+                    <li class="flex items-center text-left font-bold text-sm pb-4">
+                      <img src="./assets/svg/check-green.svg" alt="green checkmark" class="pr-2">
+                      Unlimited product updates
+                    </li>
+                    <li class="flex items-center text-left font-bold text-sm pb-4">
+                      <img src="./assets/svg/check-green.svg" alt="green checkmark" class="pr-2">
+                      Unlimited product updates
+                    </li>
+                    <li class="flex items-center text-left font-bold text-sm pb-4">
+                      <img src="./assets/svg/check-gray.svg" alt="gray checkmark" class="pr-2">
+                      1GB Cloud storage
+                    </li>
+                    <li class="flex items-center text-left font-bold text-sm pb-4">
+                      <img src="./assets/svg/check-gray.svg" alt="gray checkmark" class="pr-2">
+                      Email and community Support
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-  
+    
     <section class="relative">
       <div class="absolute inset-0 bg-gradient-to-r from-white to-transparent z-10"></div>
-      <div class="relative bg-no-repeat bg-right" style="background-image: url('../assets/jpg/contact.jpg');">
+      <div class="relative bg-no-repeat bg-position bg-cover bg-right" style="background-image: url('../assets/jpg/contact.jpg');">
         <div class="relative z-20">
-          <div class="wrapper">
-            <h3 class="text-base pt-24 font-bold">Contact Us</h3>
+          <div class="wrapper px-[87px] lg:px-0">
+            <h3 class="text-base font-bold pt-24">Contact Us</h3>
             <h4 class="text-4xl pb-10 font-bold">Make an Appointment</h4>
-            <div class="grid gap-5">
-              <div class="flex flex-wrap">
-                <div class="max-w-xs">
-                  <input type="text"
-                    class="rounded-md w-[290px] text-sm text-[#737373] py-3 px-5 mr-5 gap-x-3 border border-gray" id="name"
-                    placeholder="Full Name *">
-                </div>
-                <div class="max-w-xs">
-                  <input type="email" class="rounded-md w-[290px] text-sm text-[#737373] py-3 px-5 border border-gray"
-                    id="email" placeholder="Email *">
-                </div>
+            <div class="grid gap-0 lg:gap-5">
+              <div class="flex md:flex-row flex-col">
+                  <input type="text" class="max-w-xs rounded-md w-[290px] text-sm text-[#737373] py-3 px-5 mr-5 gap-x-3 border border-gray mb-4 lg:mb-0" id="name" placeholder="Full Name *">
+                  <input type="email" class="max-w-xs rounded-md w-[290px] text-sm text-[#737373] py-3 px-5 border border-gray mb-4 lg:mb-0" id="email" placeholder="Email *">
               </div>
-              <div class="flex flex-wrap">
-                <div class="max-w-xs">
-                  <select class="rounded-md w-[290px] text-sm text-[#737373] py-3 px-5 mr-5 border border-gray"
-                    aria-label="select">
+              <div class="flex md:flex-row flex-col">
+                  <select class="rounded-md w-[290px] text-sm text-[#737373] py-3 px-5 mr-5 border border-gray mb-4 lg:mb-0" aria-label="select">
                     <option selected>Please Select</option>
                     <option value="1">One</option>
                     <option value="2">Two</option>
                     <option value="3">Three</option>
                   </select>
-                </div>
-                <div class="max-w-xs">
-                  <select class="rounded-md w-[290px] text-sm text-[#737373] py-3 px-5 border border-gray"
-                    aria-label="time">
+                
+                
+                  <select class="rounded-md w-[290px] text-sm text-[#737373] py-3 px-5 border border-gray mb-4 lg:mb-0" aria-label="time">
                     <option selected>4:00 Available</option>
                     <option value="1">One</option>
                     <option value="2">Two</option>
                     <option value="3">Three</option>
                   </select>
                 </div>
-              </div>
-              <div class="flex flex-wrap">
+              
+              <div class="flex">
                 <div class="pb-5 max-w-xs">
-                  <div class="message-input">
-                    <textarea
-                      class="rounded-md text-area resize-none w-[600px] h-[140px] text-sm text-[#737373] py-3 px-5 border border-gray"
-                      rows="3" placeholder="Message"></textarea>
-                  </div>
+                    <textarea class="rounded-md text-area resize-none w-[290px] md:w-[600px] h-[140px] text-sm text-[#737373] py-3 px-5 border border-gray w-[292px]" rows="3" placeholder="Message"></textarea>
                 </div>
               </div>
-              <button
-                class="flex justify-center bg-[#23A6F0] rounded-md text-white border-none w-[230px] h-12 px-10 flex items-center font-bold text-sm text-center"
-                type="submit">Book Appointment</button>
+              <button class="flex justify-center bg-[#23A6F0] rounded-md text-white border-none w-[290px] md:w-[230px] h-12 px-10 flex items-center font-bold text-sm text-center" type="submit">Book Appointment</button>
             </div>
             <div class="margin pb-24"></div>
           </div>
         </div>
       </div>
     </section>
-    </main>
-
+    
     <footer class="flex pt-10 flex-col">
-      <div class="footer-top">
-          <div class="flex wrapper justify-between">
-              <div class="flex text-container flex-col">
-                  <h3 class="font-bold text-2xl pb-2">Consulting Agency For Your Business</h3>
-                  <p class="text-sm text-[#737373] pb-10">the quick fox jumps over the lazy dog</p>
-              </div>
-              <button class="bg-[#23A6F0] rounded-md text-white border-none h-12 px-10 flex items-center text-sm font-bold text-center" type="submit">Contact Us</button>
+      <div class="footer-top px-[87px] lg:px-0">
+        <div class="flex wrapper justify-between flex-col lg:flex-row">
+          <div class="flex text-container flex-col">
+            <h3 class="font-bold text-2xl pb-2">Consulting Agency For Your Business</h3>
+            <p class="text-sm text-[#737373] pb-10">the quick fox jumps over the lazy dog</p>
           </div>
+          <div class="flex pb-10">
+            <button class="bg-[#23A6F0] rounded-md text-white border-none h-12 px-10 flex items-center text-sm font-bold text-center" type="submit">Contact Us</button>
+          </div>
+          
+        </div>
       </div>
       <div class="footer-middle bg-[#252B42] text-white">
-          <div class="wrapper flex justify-evenly">
-              <div class="link-container flex flex-col py-12 pr-8">
-                  <h4 class="text-base font-bold mb-5">Company Info</h4>
-                  <ul class="pl-0">
-                      <li class="text-sm leading-10">About Us</li>
-                      <li class="text-sm leading-10">Carrier</li>
-                      <li class="text-sm leading-10">We are hiring</li>
-                      <li class="text-sm leading-10">Blog</li>
-                  </ul>
-              </div>
-              <div class="link-container flex flex-col py-12 pr-8">
-                  <h4 class="text-base font-bold mb-5">Legal</h4>
-                  <ul class="pl-0">
-                      <li class="text-sm leading-10">About Us</li>
-                      <li class="text-sm leading-10">Carrier</li>
-                      <li class="text-sm leading-10">We are hiring</li>
-                      <li class="text-sm leading-10">Blog</li>
-                  </ul>
-              </div>
-              <div class="link-container flex flex-col py-12 pr-8">
-                  <h4 class="text-base font-bold mb-5">Features</h4>
-                  <ul class="pl-0">
-                      <li class="text-sm leading-10">Business Marketing</li>
-                      <li class="text-sm leading-10">User Analytic</li>
-                      <li class="text-sm leading-10">Live Chat</li>
-                      <li class="text-sm leading-10">Unlimited Support</li>
-                  </ul>
-              </div>
-              <div class="link-container flex flex-col py-12 pr-8">
-                  <h4 class="text-base font-bold mb-5">Resources</h4>
-                  <ul class="pl-0">
-                      <li class="text-sm leading-10">IOS & Android</li>
-                      <li class="text-sm leading-10">Watch a Demo</li>
-                      <li class="text-sm leading-10">Customers</li>
-                      <li class="text-sm leading-10">API</li>
-                  </ul>
-              </div>
-              <div class="link-container get-in-touch flex flex-col py-12 pr-8">
-                  <h4 class="text-base font-bold mb-5">Get In Touch</h4>
-                  <ul class="pl-0">
-                      <li class="text-sm"><a class="flex pb-2" href="#" alt="telephone"><img class="mobile-img hidden" src="./assets/png/Phone-blue.png"><img class="desktop-img flex" src="./assets/png/Phone.png">&nbsp;&nbsp;(480) 555-0103</a></li>
-                      <li class="text-sm"><a class="flex pb-2" href="#" alt="map"><img class="mobile-img hidden" src="./assets/png/Map-blue.png"><img class="desktop-img flex" src="./assets/png/Map.png">&nbsp;&nbsp;4517 Washington Ave.</a></li>
-                      <li class="text-sm"><a class="flex pb-2" href="#" alt="email"><img class="mobile-img hidden" src="./assets/png/Send-blue.png"><img class="desktop-img flex" src="./assets/png/Send.png">&nbsp;&nbsp;debra.holt@example.com</a></li>
-                  </ul>
-              </div>
+        <div class="wrapper flex justify-evenly flex-col px-[87px] lg:flex-row lg:px-0">
+          <div class="link-container flex flex-col pt-12 lg:pb-12 pr-8">
+            <h4 class="text-base font-bold mb-5">Company Info</h4>
+            <ul class="pl-0">
+              <li class="text-sm leading-10">About Us</li>
+              <li class="text-sm leading-10">Carrier</li>
+              <li class="text-sm leading-10">We are hiring</li>
+              <li class="text-sm leading-10">Blog</li>
+            </ul>
           </div>
-      </div>
-      <div class="footer-bottom">
-          <div class="wrapper flex justify-between items-center">
-              <p class="text-sm text-[#737373] font-bold flex items-center py-12">Made With Love By Figmaland All Right Reserved</p>
-              <a href="#"><img class="mobile-img hidden" src="./assets/png/Social-media-color.png"><img class="desktop-img flex" src="./assets/png/Social-media.png" alt="social media"></a>
+          <div class="link-container flex flex-col pt-12 lg:pb-12 pr-8">
+            <h4 class="text-base font-bold mb-5">Legal</h4>
+            <ul class="pl-0">
+              <li class="text-sm leading-10">About Us</li>
+              <li class="text-sm leading-10">Carrier</li>
+              <li class="text-sm leading-10">We are hiring</li>
+              <li class="text-sm leading-10">Blog</li>
+            </ul>
           </div>
+          <div class="link-container flex flex-col pt-12 lg:pb-12 pr-8">
+            <h4 class="text-base font-bold mb-5">Features</h4>
+            <ul class="pl-0">
+              <li class="text-sm leading-10">Business Marketing</li>
+              <li class="text-sm leading-10">User Analytic</li>
+              <li class="text-sm leading-10">Live Chat</li>
+              <li class="text-sm leading-10">Unlimited Support</li>
+            </ul>
+          </div>
+          <div class="link-container flex flex-col pt-12 lg:pb-12 pr-8">
+            <h4 class="text-base font-bold mb-5">Resources</h4>
+            <ul class="pl-0">
+              <li class="text-sm leading-10">IOS & Android</li>
+              <li class="text-sm leading-10">Watch a Demo</li>
+              <li class="text-sm leading-10">Customers</li>
+              <li class="text-sm leading-10">API</li>
+            </ul>
+          </div>
+          <div class="flex flex-col pt-12 lg:pb-12 lg:pr-8">
+            <h4 class="text-base font-bold mb-5">Get In Touch</h4>
+            <ul class="pl-0">
+              <li class="text-sm"><a class="flex pb-2 items-center" href="#" alt="telephone"><img class="mobile-img block min-w-6 min-h-6 lg:hidden" src="./assets/png/Phone-blue.png"><img class="desktop-img hidden lg:flex" src="./assets/png/Phone.png">&nbsp;&nbsp;(480) 555-0103</a></li>
+              <li class="text-sm"><a class="flex pb-2 items-center" href="#" alt="map"><img class="mobile-img block min-w-6 min-h-6 lg:hidden" src="./assets/png/Map-blue.png"><img class="desktop-img hidden lg:flex" src="./assets/png/Map.png">&nbsp;&nbsp;4517 Washington Ave.</a></li>
+              <li class="text-sm"><a class="flex pb-2 items-center" href="#" alt="email"><img class="mobile-img block min-w-6 min-h-6 lg:hidden" src="./assets/png/Send-blue.png"><img class="desktop-img hidden lg:flex" src="./assets/png/Send.png">&nbsp;&nbsp;debra.holt@example.com</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
-  </footer>
+      <div class="bg-[#252B42] lg:bg-white">
+        <div class="wrapper flex justify-between py-10 lg:items-center flex-col px-[87px] lg:flex-row lg:px-0">
+          <p class="text-sm text-white lg:text-[#737373] font-semibold flex lg:items-center py-12">Made With Love By Figmaland All Right Reserved</p>
+          <a href="#"><img class="mobile-img flex pb-14 lg:hidden" src="./assets/png/Social-media-color.png"><img class="desktop-img hidden lg:flex" src="./assets/png/Social-media.png" alt="social media"></a>
+        </div>
+      </div>
+    </footer>
+    
 </body>
 
 </html>

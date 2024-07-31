@@ -7,17 +7,19 @@
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+    border: none;
   }
   
   .wrapper {
     max-width: 1050px;
     margin: 0 auto;
   }
-body:has(#menu-toggle:checked) {
+
+  body:has(#menu-toggle:checked) {
     .show {
         display:flex;
     }
 }
-.bg-custom-gradient {
+  .bg-custom-gradient {
     background-image: linear-gradient(to bottom, transparent 15%, rgba(56, 56, 56,.84) 100%);
 }
