@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -13,4 +17,13 @@
   .wrapper {
     max-width: 1050px;
     margin: 0 auto;
+  }
+
+  @layer utilities {
+    @variants sm {
+      .bg-cover-md {
+        @apply bg-cover;
+        background-position-x: 52%;
+      }
+    }
   }
